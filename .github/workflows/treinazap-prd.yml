@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
-      - run: ls -la
+          node-version: 12.21.0
+      - name: INSTALL E BUILD
+      - run: node --version
       - run: pwd
