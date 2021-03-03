@@ -4,8 +4,9 @@
 name: Deploy TreinaZap - S3
 
 on:
-  release:
-    types: [commit]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -15,3 +16,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: ls -la
+      - run: pwd
