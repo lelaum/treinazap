@@ -17,7 +17,7 @@ jobs:
       - name: INSTALL AWS CLIENT 
         run: pip install awscli
       - name: INSTALL E BUILD
-        run: npm install && npm rum build
+        run: npm install && npm run build
         env:
             CI: "false"
       - name: DEPLOY S3
