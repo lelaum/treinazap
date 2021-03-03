@@ -25,4 +25,3 @@ jobs:
         env:
             CHAVE: ${{ secrets.ACCESS_KEY }}
             SENHA: ${{ secrets.SECRET_KEY }}
-        
