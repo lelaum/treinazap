@@ -18,5 +18,7 @@ jobs:
           node-version: 12.21.0
       - name: INSTALL E BUILD
         run: npm install && npm rum build
-      - name: LIISTAR ARQUIVOS
+      - name: LISTAR ARQUIVOS
+      ]
+      
       
