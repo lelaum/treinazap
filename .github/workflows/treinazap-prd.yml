@@ -19,6 +19,6 @@ jobs:
       - name: INSTALL E BUILD
         run: npm install && npm rum build
       - name: LISTAR ARQUIVOS
-      ]
+        run: ls -la /build
       
       
