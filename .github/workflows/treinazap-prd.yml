@@ -26,4 +26,4 @@ jobs:
       - name: DEPLOY S3
         run: cd build && AWS_ACCESS_KEY_ID=${ACCESS_KEY} AWS_SECRET_ACCESS_KEY=${SECRET_KEY} aws s3 sync . s3://treinazap-lelaum --acl public-read --delete
       - name: LIMPAR CACHE  
-        run: AWS_ACCESS_KEY_ID=${ACCESS_KEY} AWS_SECRET_ACCESS_KEY=${SECRET_KEY} aws cloudfront create-invalidation --distibuition-id ER5HJR7CVXWNM --paths "/*"
+        run: AWS_ACCESS_KEY_ID=${ACCESS_KEY} AWS_SECRET_ACCESS_KEY=${SECRET_KEY} aws cloudfront create-invalidation --distibution-id ER5HJR7CVXWNM --paths "/*"
